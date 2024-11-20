@@ -1,0 +1,20 @@
+name: Print commit message
+
+on:
+    push:
+        branches:
+            - '**'  #Trigger on push to any branch
+jobs: 
+    PrintCommitMessage:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              run: actions/checkout@v3
+
+            - name: Print Commit Message
+              run: echo "Commit Message  ${{github.event.head_commit.message}}"
+
+            
+
+
