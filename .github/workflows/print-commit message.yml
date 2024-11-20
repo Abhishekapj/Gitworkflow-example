@@ -10,7 +10,7 @@ jobs:
 
         steps:
             - name: Checkout code
-              run: actions/checkout
+              uses: actions/checkout@v3
 
             - name: Print Commit Message
               run: echo "Commit Message  ${{github.event.head_commit.message}}"
