@@ -12,6 +12,9 @@ jobs:
             - name: Print a Message
               run: echo "Push happened to this Repo"
 
+            - name: Test message
+              run: echo "Test"
+
             
 
 
